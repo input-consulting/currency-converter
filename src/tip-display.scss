@@ -1,0 +1,71 @@
+.tip {
+
+  border: solid 1px;
+  border-radius: 4px;
+  padding: .5rem;
+
+  animation: fadein .5s;
+  
+  &-result {
+      color: #eee;
+      > span {
+        margin-right: .5rem;
+      } 
+
+      &-tipamount {
+        color: yellowgreen;
+      }
+
+      &-amount {
+        color: yellowgreen;
+      }
+     
+  }
+
+  &-display {
+    display: grid;
+    grid-template-columns: minmax(3rem, 1fr) minmax(3rem, 1fr) minmax(3rem, 1fr) minmax(3rem, 1fr) minmax(3rem, 1fr);
+    grid-gap: .5rem;
+
+    &-button {
+      box-shadow: 0 2px 5px rgba(0, 0, 0, .1);      
+    }
+
+    .selected {
+      border: solid 1px #fff !important;
+    }
+  
+  }
+ 
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}  
+
+

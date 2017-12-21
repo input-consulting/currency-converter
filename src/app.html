@@ -1,0 +1,46 @@
+<template>
+  <require from="./style/style.css"></require>
+
+  <require from="./app-header"></require>
+  <require from="./keypad"></require>
+  <require from="./display-panel"></require>
+  <require from="./display-field"></require>
+  <require from="./tip-display"></require>
+  
+  <div class="container">
+
+    <div class="row row-center">
+      <div class="col-sm-7">
+        <app-header></app-header>
+      </div>
+    </div>
+
+    <div class="row row-center">
+      <div class="col-sm-7">
+        <display-panel>
+          <display-field currency='SEK'></display-field>
+          <display-field currency='GBP'></display-field>
+          <display-field currency='EUR'></display-field>
+          <display-field currency='CUC'></display-field>
+          <display-field currency='CUP'></display-field>
+        </display-panel>
+      </div>
+    </div>
+
+    <div class="row row-center">
+      <div class="col-sm-7">
+        <tip-display></tip-display>
+      </div>
+    </div>
+    
+    <div class="row row-center">
+      <div class="col-sm-7">
+        <keypad></keypad>
+      </div>
+
+    </div>
+
+  </div>
+
+  
+</template>

@@ -1,0 +1,37 @@
+<template>
+
+  <div class="tip" if.bind="visible">
+
+    <div class="tip-result">
+      <span>Tip:</span>
+      <span class="tip-result-tipamount">${tipAmount | fixed}</span>
+      <span>Total:</span>
+      <span class="tip-result-amount">${(amount + tipAmount) | fixed}</span>
+    </div>
+
+    <div class="tip-display">
+      <button class="button-danger tip-display-button ${tip == 0 ? 'selected' : ''}" type="button" click.delegate="tipPressed(0) & self">0%</button>
+      <button class="button-success tip-display-button ${tip == 5 ? 'selected' : ''}" type="button" click.delegate="tipPressed(5) & self">5%</button>
+      <button class="button-success tip-display-button ${tip == 10 ? 'selected' : ''}" type="button" click.delegate="tipPressed(10) & self">10%</button>
+      <button class="button-success tip-display-button ${tip == 15 ? 'selected' : ''}" type="button" click.delegate="tipPressed(15) & self">15%</button>
+      <button class="button-success tip-display-button ${tip == 20 ? 'selected' : ''}" type="button" click.delegate="tipPressed(20) & self">20%</button>
+    </div>
+
+    <div class="tip-result">
+      <span>Tip p/p:</span>
+      <span class="tip-result-tipamount">${splitTip | fixed}</span>
+      <span>Total p/p:</span>
+      <span class="tip-result-amount">${(splitTip + splitAmount) | fixed}</span>
+    </div>
+
+    <div class="tip-display">
+      <button class="button-success tip-display-button ${split == 2 ? 'selected' : ''}" type="button" click.delegate="splitPressed(2) & self">2</button>
+      <button class="button-success tip-display-button ${split == 3 ? 'selected' : ''}" type="button" click.delegate="splitPressed(3) & self">3</button>
+      <button class="button-success tip-display-button ${split == 4 ? 'selected' : ''}" type="button" click.delegate="splitPressed(4) & self">4</button>
+      <button class="button-success tip-display-button ${split == 5 ? 'selected' : ''}" type="button" click.delegate="splitPressed(5) & self">5</button>
+      <button class="button-success tip-display-button ${split == 6 ? 'selected' : ''}" type="button" click.delegate="splitPressed(6) & self">6</button>
+    </div>
+
+  </div>
+
+</template>
