@@ -43,8 +43,7 @@ To run the app, execute the following command from within the app folder:
 ```
 au run --env dev --watch
 ```
-
-## Applciation Cache
+## Application Cache
 
 This app makes use of the Application Cache to work offline. The cache manifest is in the file offline.manifest. During development it's advisable to disable this feature in index.html.
 Since the app will always load from cache no matter what, the only way to force an upidate is to change the content in the offline.manifest file. Easy way is to change the comment line with the date and time.
