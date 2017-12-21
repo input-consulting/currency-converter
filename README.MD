@@ -1,5 +1,6 @@
 
 # Input Consulting - Currency Converter
+Christmas present from us to you
 
 ## Machine Setup
 
@@ -43,9 +44,16 @@ To run the app, execute the following command from within the app folder:
 ```
 au run --env dev --watch
 ```
+## Add this to your phone
+
+On your phone browse to the page http://localhost:9000/ 
+Your phone must obviously be on the same network as your computer.
+
+Thats it, the app is cached. You can also add it to your homescreen. On iPhone's just click the share button at the bottom of the browser and choose "Add to homescreen". That will make the app more appable on your Phone :)
+
 ## Application Cache
 
 This app makes use of the Application Cache to work offline. The cache manifest is in the file offline.manifest. During development it's advisable to disable this feature in index.html.
-Since the app will always load from cache no matter what, the only way to force an upidate is to change the content in the offline.manifest file. Easy way is to change the comment line with the date and time.
+Since the app will always load from cache no matter what, the only way to force an update is to change the content in the offline.manifest file. Easy way is to change the comment line with the date and time.
 
 This should be sorted automatically in the build process.
