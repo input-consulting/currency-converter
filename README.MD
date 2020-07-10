@@ -1,59 +1,68 @@
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
 
-# Input Consulting - Currency Converter
-Christmas present from us to you
+## Available Scripts
 
-## Machine Setup
+In the project directory, you can run:
 
-This app is built on node.js, which has a couple of prerequisites you must install first. If you have previously setup your machine for node.js, you can skip this step.
+### `yarn start`
 
-* Install NodeJS >= 8.x
-    * You can [download it here](https://nodejs.org/en/).
-* Install a Git Client
-    * Here's [a nice GUI client](https://desktop.github.com).
-    * Here's [a standard client](https://git-scm.com).
+Runs the app in the development mode.<br />
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-Once you have the prerequisites installed, you need a couple of packages. From the command line, use npm to install them globally:
+The page will reload if you make edits.<br />
+You will also see any lint errors in the console.
 
-```
-npm install gulp -g
-npm install aurelia -g
-```
-Optional package manager
-```
-npm install yarn -g
-```
+### `yarn test`
 
-> Note: Always run commands from a Bash prompt. Depending on your environment, you may need to use `sudo` when executing npm global installs.
+Launches the test runner in the interactive watch mode.<br />
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-## Application Setup
+### `yarn build`
 
-Once you've setup your machine (or if it's been previous setup), you simply need to install the dependencies. From within the app folder, execute the following command:
+Builds the app for production to the `build` folder.<br />
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-```
-npm install
-```
-or
-```
-yarn install
-```
+The build is minified and the filenames include the hashes.<br />
+Your app is ready to be deployed!
 
-## Running The App
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-To run the app, execute the following command from within the app folder:
+### `yarn eject`
 
-```
-au run --env dev --watch
-```
-## Add this to your phone
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-On your phone browse to the page http://localhost:9000/ 
-Your phone must obviously be on the same network as your computer.
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Thats it, the app is cached. You can also add it to your homescreen. On iPhone's just click the share button at the bottom of the browser and choose "Add to homescreen". That will make the app more appable on your Phone :)
+Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-## Application Cache
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-This app makes use of the Application Cache to work offline. The cache manifest is in the file offline.manifest. During development it's advisable to disable this feature in index.html.
-Since the app will always load from cache no matter what, the only way to force an update is to change the content in the offline.manifest file. Easy way is to change the comment line with the date and time.
+## Learn More
 
-This should be sorted automatically in the build process.
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+
+### Analyzing the Bundle Size
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+
+### Making a Progressive Web App
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+
+### Advanced Configuration
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+
+### Deployment
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+
+### `yarn build` fails to minify
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify

@@ -1,8 +1,0 @@
-CACHE MANIFEST
-# 2017-12-21 07:38
-CACHE:
-/scripts/vendor-bundle.js
-/scripts/app-bundle.js
-
-NETWORK:
-/browser-sync
