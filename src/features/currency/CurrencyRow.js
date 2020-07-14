@@ -1,13 +1,12 @@
-import React from 'react';
+import React from "react";
 import {
   selectCurrentCurrency,
-  setCurrentCurrency,
   selectVisibleCurrencies,
-} from './currency.slice';
+  changeCurrency,
+} from "./currency.slice";
 
-import { setKeypadValue } from '../keypad/keypad.slice';
-import { useSelector, useDispatch } from 'react-redux';
-import Currency from '../../components/Currency';
+import { useSelector, useDispatch } from "react-redux";
+import Currency from "../../components/Currency";
 
 const CurrencyRow = ({ currencyCode }) => {
   const dispatch = useDispatch();
@@ -17,8 +16,7 @@ const CurrencyRow = ({ currencyCode }) => {
   const handleSelectCurrency = () => {
     if (isActive) return;
 
-    dispatch(setCurrentCurrency({ currency: currencyCode }));    
-    dispatch(setKeypadValue(convertedValue.toString().split('')));
+    dispatch(changeCurrency(currencyCode));
   };
 
   return (

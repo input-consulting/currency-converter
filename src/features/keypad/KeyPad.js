@@ -2,8 +2,7 @@ import React, { useEffect } from 'react';
 import { styled } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 import { useDispatch } from 'react-redux';
-import { updateCurrentValue } from './keypad.slice';
-import { convertCurrencies } from '../currency/currency.slice';
+import { updateKeyboardValue } from './keypad.slice';
 
 const Keys = styled('div')({
   marginTop: '.5rem',
@@ -34,19 +33,18 @@ const KeyPad = () => {
     return () => document.removeEventListener('keydown', onKeyDown);
   });
 
-  const doUpdate = (value) => {
-    dispatch(updateCurrentValue(value));
-    dispatch(convertCurrencies());
+  const doUpdateKeyboardValue = (value) => {
+    dispatch(updateKeyboardValue(value));
   };
 
   const onKeyDown = (e) => {
     if (!isDigit(e.key)) return;
-    doUpdate(e.key);
+    doUpdateKeyboardValue(e.key);
   };
 
   const onKeyPressed = (value) => (e) => {
     e.preventDefault();
-    doUpdate(value || null);
+    doUpdateKeyboardValue(value || null);
   };
 
   return (
